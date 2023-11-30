@@ -1,0 +1,29 @@
+/*Regole responsive tablet 768px*/
+
+@media screen and (max-width: 768px){
+    .container{
+        width: auto;
+    }
+}
+
+/*Regole responsive mobile 576px*/
+
+@media screen and (max-width: 576px) {
+
+    .container{
+        padding: 0 70px;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px
+    }
+
+    .lessons .col, .steps .col, .why-us .col {
+        width: auto;
+    }
+
+    .col p{
+        font-size: 20px;
+    }
+}
