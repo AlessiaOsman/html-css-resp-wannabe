@@ -1,6 +1,12 @@
+.container{
+    width: 100%;
+    max-width: 1140px ;
+}
+
 /*Regole responsive tablet 768px*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){ 
+    /*Mettendo la regola sopra questa media query non mi serve più*/
     .container{
         width: auto;
     }
@@ -16,8 +22,10 @@
     .row{
         flex-direction: column;
         align-items: center;
-        gap: 50px
+        gap: 50px /*Tecnicamente è più giusto usare la proprietà row-gap*/
     }
+
+    /*potevo scrivere .row .col e avrei comunque sovrascritto la regola*/
 
     .lessons .col, .steps .col, .why-us .col {
         width: auto;
@@ -25,5 +33,19 @@
 
     .col p{
         font-size: 20px;
+    }
+
+    /*Mancavano le regole per il background del footer*/
+
+    .why-us{
+        background-color: #222222;
+        padding: 3rem  0;
+    
+    }
+
+    .steps,
+    .lessons,
+    .why-us{
+        margin-bottom: 0;
     }
 }
